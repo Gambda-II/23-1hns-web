@@ -4,21 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Cards - Mit Flexbox</title>
+=======
+    <title>Cards - Flexbox</title>
+>>>>>>> fdc85671735db2cc30e041d691d6d9b0608d4f8b
     <style>
         section.card-container {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
+<<<<<<< HEAD
         }
         .card {
             width: 300px;
             background-color: rgb(126, 158, 255);
+=======
+            justify-content: center;
+        }
+        .card {
+            width: 300px;
+            background-color: rgba(100, 100, 100, 0.1);
+>>>>>>> fdc85671735db2cc30e041d691d6d9b0608d4f8b
             /* border: 1px solid #8c8c8c; */
             color: rgb(0, 0, 107);
             border-radius: 1rem;
+<<<<<<< HEAD
             padding: 1rem;
             box-shadow: 0px 0px 15px #3b1b4d;
+=======
+            box-shadow: 5px 5px 15px #8c8c8c;
+            transition: all .5s ease-in-out;
+        }
+        /* Pseudo-Klasse / Pseudo-Class */
+        .card:hover {
+            box-shadow: 0 0 15px #d839c8;
+            cursor: pointer;
+>>>>>>> fdc85671735db2cc30e041d691d6d9b0608d4f8b
         }
 
         .card:hover {
@@ -31,6 +53,7 @@
         .card img {
             width: 110.7%;
             margin-bottom: 1rem;
+<<<<<<< HEAD
             margin-left: -1rem;
             margin-top: -1rem;
             border-top-left-radius: 1rem;
@@ -39,6 +62,16 @@
             cursor: pointer;
         }
 
+=======
+            padding: 0;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .card div.card-text {
+            padding: 1rem;
+        }
+
+>>>>>>> fdc85671735db2cc30e041d691d6d9b0608d4f8b
         .card p.tag {
             display: inline;
             border-radius: 1rem;
@@ -55,11 +88,21 @@
             font-size: 1.6rem;
             font-weight: 600;
         }
+
+        .card h1 {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .card p.card-body {
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 
 <body>
     <section class="card-container">
+<<<<<<< HEAD
 
         <div class="card" style="background-color: rgb(129, 0, 0);">
             <img src="https://picsum.photos/300/200" alt="Image">
@@ -89,6 +132,35 @@
             <p>An exploration into the truck's polarising design.</p>
         </div>
     </section>
+=======
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Image">
+            <div class="card-text">
+                <p class="tag">Technology</p>
+                <h1>Why is the Tesla Cybertruck designed the way it is?</h1>
+                <p class="card-body">An exploration into the truck's polarising design.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Image">
+            <div class="card-text">
+                <p class="tag">Technology</p>
+                <h1>Why is the Tesla Cybertruck designed the way it is?</h1>
+                <p class="card-body">An exploration into the truck's polarising design.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200" alt="Image">
+            <div class="card-text">
+                <p class="tag">Technology</p>
+                <h1>Why is the Tesla Cybertruck designed the way it is?</h1>
+                <p class="card-body">An exploration into the truck's polarising design.</p>
+            </div>
+        </div>
+    </section>
+
+
+>>>>>>> fdc85671735db2cc30e041d691d6d9b0608d4f8b
 </body>
 
 </html>
