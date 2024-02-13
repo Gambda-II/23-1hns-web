@@ -1,0 +1,80 @@
+html{
+    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.title{
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+section{
+    height: 90vh;
+}
+
+.grid-inputs{
+    display: grid;
+    opacity: 95%;
+    background-color: azure;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+    border: 2px solid black;
+    padding: 0.6rem;
+    margin: 0.5rem;
+}
+
+.grid-inputs label{
+    font-weight: 500;
+    display: block;
+    width: auto;
+}
+
+.grid-inputs input{
+    background-color: honeydew;
+    border-radius: 0.5rem;;
+    font-size: large;
+    width: 240px;
+    height: 50px;
+}
+
+.grid-inputs input:focus{
+    transition: all 0.2s;
+    border-radius: 1rem;;
+    background-color: yellow;
+}
+
+.flex-column-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-row-buttons{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flex-row-buttons button{
+    background-color: honeydew;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 4rem; 
+}
+
+/*
+#bg-video{
+    position: fixed;
+    z-index: -1;
+    opacity: 100%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  */

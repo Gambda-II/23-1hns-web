@@ -4,13 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards - Mit Flexbox</title>
+    <title>Cards - Mit Grid</title>
     <style>
-        section.card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
+        html {
+            background-color: aliceblue;
         }
+
+        section.card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25vw,25vw));
+            justify-items: center;
+            justify-content: space-around;
+            gap: 100px;
+            grid-column-start: 1;
+            grid-auto-flow: row;
+
+        }
+
         .card {
             width: 300px;
             background-color: rgb(126, 158, 255);
@@ -22,7 +32,7 @@
         }
 
         .card:hover {
-            transition: box-shadow 0.3s cubic-bezier(0,15.67,.65,22.94);
+            transition: box-shadow 0.3s cubic-bezier(0, 15.67, .65, 22.94);
             box-shadow: 0px 0px 50px yellow;
             background-color: rgb(9, 27, 78);
             color: white;
@@ -61,25 +71,32 @@
 <body>
     <section class="card-container">
 
-        <div class="card" style="background-color: rgb(129, 0, 0);">
+        <div class="card">
             <img src="https://picsum.photos/300/200" alt="Image">
-            <p class="tag" >Amazing!</p>
+            <p class="tag">Amazing!</p>
             <h1>Never seen before</h1>
             <p>An exploration into the truck's polarising design.</p>
         </div>
 
-        <div class="card" style="background-color: rgb(0, 87, 158);">
+        <div class="card">
             <img src="https://picsum.photos/300/201" alt="Image">
-            <p class="tag" >Lifehack</p>
+            <p class="tag">Lifehack</p>
             <h1>Stop wasting time eating different meals</h1>
             <p>Just mix everything together and safe precious time.</p>
         </div>
 
-        <div class="card" style="background-color: rgb(0, 143, 0);">
+        <div class="card">
             <img src="https://picsum.photos/300/202" alt="Image">
-            <p class="tag" >Sus</p>
+            <p class="tag">Sus</p>
             <h1>The feeling of being watched in a dark alley</h1>
             <p>You guessed it! You might just be paranoid.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/203" alt="Image">
+            <p class="tag">Technology</p>
+            <h1>Why is the Tesla Cybertruck designed the way it is?</h1>
+            <p>An exploration into the truck's polarising design.</p>
         </div>
 
         <div class="card">
